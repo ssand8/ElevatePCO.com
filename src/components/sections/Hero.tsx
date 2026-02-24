@@ -32,7 +32,7 @@ export function Hero({
   return (
     <section
       className={`relative overflow-hidden ${
-        fullHeight ? "min-h-screen" : "pt-32 pb-20 lg:pt-40 lg:pb-28"
+        fullHeight ? "min-h-[80vh] sm:min-h-screen" : "pt-32 pb-20 lg:pt-40 lg:pb-28"
       }`}
     >
       {/* Background effects */}
@@ -43,7 +43,7 @@ export function Hero({
         <div
           className={`flex flex-col items-center gap-12 lg:gap-16 ${
             imagePlaceholder ? "lg:flex-row lg:items-center" : ""
-          } ${fullHeight ? "min-h-screen justify-center pt-20" : ""}`}
+          } ${fullHeight ? "min-h-[80vh] sm:min-h-screen justify-center pt-20" : ""}`}
         >
           {/* Text content */}
           <div
@@ -53,10 +53,10 @@ export function Hero({
           >
             <AnimateOnScroll>
               {badge && <Badge className="mb-6">{badge}</Badge>}
-              <h1 className="text-4xl font-bold tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
+              <h1 className="text-3xl font-bold tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
                 {title}
               </h1>
-              <p className="mt-6 text-lg text-text-secondary sm:text-xl max-w-2xl">
+              <p className="mt-4 text-base text-text-secondary sm:mt-6 sm:text-xl max-w-2xl">
                 {subtitle}
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
