@@ -141,7 +141,7 @@ export const dashboardsFAQ: FAQItem[] = [
   {
     question: "What if I have multiple branches?",
     answer:
-      "Elevate Performance Dashboards supports multi-branch operations. Regional managers see data across all locations, while branch managers are scoped to their own team.",
+      "Elevate Sales Performance supports multi-branch operations. Regional managers see data across all locations, while branch managers are scoped to their own team.",
   },
 ];
 

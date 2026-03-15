@@ -16,7 +16,7 @@ import {
 import { DEMO_BOOKING_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Elevate Performance Dashboards — Real-Time KPI Tracking for Pest Control",
+  title: "Elevate Sales Performance — Real-Time KPI Tracking for Pest Control",
   description:
     "Real-time sales leaderboards, KPI dashboards, and commission tracking built for pest control companies. Integrates with FieldRoutes. See every rep, every metric, every day.",
   keywords: [

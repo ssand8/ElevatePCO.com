@@ -1,12 +1,12 @@
 import { Hero } from "@/components/sections/Hero";
-import { ProductOverviewCard } from "@/components/sections/ProductOverviewCard";
+import { CategorySection } from "@/components/sections/CategorySection";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import { SocialProof } from "@/components/sections/SocialProof";
 import { CTASection } from "@/components/sections/CTASection";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import {
-  homepageProducts,
+  homepageCategories,
   homepageValueProps,
   homepageStats,
 } from "@/data/homepage";
@@ -23,28 +23,32 @@ export default function HomePage() {
             <span className="gradient-text">Pest Control Growth</span>
           </>
         }
-        subtitle="Real-time performance dashboards and automated compliance documentation — powered by your FieldRoutes data. Stop guessing, stop chasing paperwork, start winning."
+        subtitle="The complete software suite for pest control companies — sales performance, permits, compliance, operations efficiency, and business finance. All powered by your FieldRoutes data."
         ctas={[
-          { label: "Explore Dashboards", href: "/dashboards" },
+          { label: "Explore Products", href: "#products" },
           {
-            label: "Explore Compliance",
-            href: "/compliance",
+            label: "Book a Demo",
+            href: DEMO_BOOKING_URL,
             variant: "secondary",
           },
         ]}
         fullHeight
       />
 
-      {/* Products Overview */}
-      <section className="py-20 lg:py-28">
+      {/* Products by Category */}
+      <section id="products" className="py-20 lg:py-28">
         <Container>
           <SectionHeading
-            title="Two Products. One Mission."
-            subtitle="Everything your pest control company needs to perform better and stay compliant."
+            title="The Complete Pest Control Platform"
+            subtitle="Five products across three categories — all purpose-built for pest control and powered by your FieldRoutes data."
           />
-          <div className="grid gap-8 md:grid-cols-2">
-            {homepageProducts.map((product, i) => (
-              <ProductOverviewCard key={product.title} {...product} index={i} />
+          <div className="space-y-20">
+            {homepageCategories.map((category, i) => (
+              <CategorySection
+                key={category.id}
+                category={category}
+                categoryIndex={i}
+              />
             ))}
           </div>
         </Container>

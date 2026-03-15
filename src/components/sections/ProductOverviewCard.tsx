@@ -8,7 +8,8 @@ interface ProductOverviewCardProps {
   description: string;
   features: string[];
   href: string;
-  accentColor?: "blue" | "emerald";
+  accentColor?: "blue" | "emerald" | "amber";
+  comingSoon?: boolean;
   index: number;
 }
 
@@ -19,6 +20,7 @@ export function ProductOverviewCard({
   features,
   href,
   accentColor = "blue",
+  comingSoon = false,
   index,
 }: ProductOverviewCardProps) {
   const colorMap = {
@@ -33,6 +35,12 @@ export function ProductOverviewCard({
       bg: "from-accent-emerald/5",
       bullet: "bg-accent-emerald",
       link: "text-accent-emerald hover:text-accent-emerald-hover",
+    },
+    amber: {
+      border: "hover:border-accent-amber/30",
+      bg: "from-accent-amber/5",
+      bullet: "bg-accent-amber",
+      link: "text-accent-amber hover:text-accent-amber-hover",
     },
   };
 
@@ -60,13 +68,19 @@ export function ProductOverviewCard({
           ))}
         </ul>
 
-        <Link
-          href={href}
-          className={`inline-flex items-center gap-2 text-sm font-medium ${colors.link} transition-colors`}
-        >
-          Learn More
-          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-        </Link>
+        {comingSoon ? (
+          <span className="inline-flex items-center gap-2 text-sm font-medium text-text-muted">
+            Coming Soon
+          </span>
+        ) : (
+          <Link
+            href={href}
+            className={`inline-flex items-center gap-2 text-sm font-medium ${colors.link} transition-colors`}
+          >
+            Learn More
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+        )}
       </div>
     </AnimateOnScroll>
   );

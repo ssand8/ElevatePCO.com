@@ -13,6 +13,8 @@
   --accent-blue-glow: rgba(59, 130, 246, 0.12);
   --accent-emerald: #10B981;
   --accent-emerald-hover: #059669;
+  --accent-amber: #F59E0B;
+  --accent-amber-hover: #D97706;
 }
 
 @theme inline {
@@ -27,6 +29,8 @@
   --color-accent-blue-hover: var(--accent-blue-hover);
   --color-accent-emerald: var(--accent-emerald);
   --color-accent-emerald-hover: var(--accent-emerald-hover);
+  --color-accent-amber: var(--accent-amber);
+  --color-accent-amber-hover: var(--accent-amber-hover);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
