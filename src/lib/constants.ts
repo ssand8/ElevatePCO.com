@@ -51,6 +51,7 @@ export const FOOTER_LINKS = {
   company: [
     { label: "About", href: "#" },
     { label: "Contact", href: "#" },
+    { label: "Text Alerts", href: "/sms-opt-in" },
   ],
   legal: [
     { label: "Privacy Policy", href: "/privacy" },
