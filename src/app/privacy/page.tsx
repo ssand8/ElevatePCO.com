@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="mt-2 text-sm text-text-muted">
-            Effective Date: March 14, 2026
+            Effective Date: June 1, 2026
           </p>
 
           <div className="mt-10 space-y-8 text-sm leading-relaxed text-text-secondary">
@@ -97,7 +97,18 @@ export default function PrivacyPolicyPage() {
               </ul>
 
               <h3 className="mb-2 font-medium text-text-primary">
-                1.4 Automatically Collected Information
+                1.4 Mobile Phone and SMS Information
+              </h3>
+              <p className="mb-4">
+                If you opt in to receive text messages from us, we collect your
+                mobile phone number and records of your SMS opt-in consent,
+                message history, and opt-out requests. We collect this
+                information to operate our messaging program in accordance with
+                applicable Application-to-Person (A2P) messaging requirements.
+              </p>
+
+              <h3 className="mb-2 font-medium text-text-primary">
+                1.5 Automatically Collected Information
               </h3>
               <ul className="list-disc space-y-1 pl-5">
                 <li>
@@ -181,12 +192,63 @@ export default function PrivacyPolicyPage() {
                 We do not share your QuickBooks data with unrelated third
                 parties for their own marketing or commercial purposes.
               </p>
+              <p className="mt-3">
+                <strong>
+                  No mobile information (including phone numbers and SMS opt-in
+                  or consent data) will be shared with or sold to third parties
+                  or affiliates for their own marketing or promotional purposes.
+                  Text messaging originator opt-in data and consent are not
+                  shared with any third parties.
+                </strong>{" "}
+                Mobile information may be shared only with the trusted service
+                providers (such as our messaging platform) that help us deliver
+                the messages you have requested, and only as necessary for that
+                purpose.
+              </p>
             </div>
 
-            {/* 4 */}
+            {/* 4 — Mobile / SMS */}
             <div>
               <h2 className="mb-3 text-lg font-semibold text-text-primary">
-                4. Data Storage and Security
+                4. Mobile Information and SMS Consent
+              </h2>
+              <p className="mb-2">
+                When you opt in to our SMS/text messaging program, you consent to
+                receive text messages from ElevatePCO at the mobile number you
+                provide. We handle your mobile information as follows:
+              </p>
+              <ul className="list-disc space-y-1 pl-5">
+                <li>
+                  We use your mobile number only to send the messages you have
+                  opted in to receive (such as account notifications, reminders,
+                  alerts, and support communications).
+                </li>
+                <li>
+                  We do not sell your mobile information, and we do not share it
+                  with third parties or affiliates for their marketing or
+                  promotional purposes.
+                </li>
+                <li>
+                  Message frequency varies, and message and data rates may apply.
+                </li>
+                <li>
+                  You can opt out at any time by replying <strong>STOP</strong>,
+                  or get help by replying <strong>HELP</strong>, to any message.
+                </li>
+              </ul>
+              <p className="mt-3">
+                For full SMS program details, see our{" "}
+                <a href="/terms" className="text-accent-blue hover:underline">
+                  Terms of Use
+                </a>
+                .
+              </p>
+            </div>
+
+            {/* 5 */}
+            <div>
+              <h2 className="mb-3 text-lg font-semibold text-text-primary">
+                5. Data Storage and Security
               </h2>
               <p>
                 We implement industry-standard security measures to protect
@@ -205,7 +267,7 @@ export default function PrivacyPolicyPage() {
             {/* 5 */}
             <div>
               <h2 className="mb-3 text-lg font-semibold text-text-primary">
-                5. Data Retention and Deletion
+                6. Data Retention and Deletion
               </h2>
               <p>
                 We retain your data for as long as your account is active or as
@@ -231,7 +293,7 @@ export default function PrivacyPolicyPage() {
             {/* 6 */}
             <div>
               <h2 className="mb-3 text-lg font-semibold text-text-primary">
-                6. Your Rights
+                7. Your Rights
               </h2>
               <p className="mb-2">
                 Depending on your jurisdiction, you may have the right to:
@@ -253,6 +315,10 @@ export default function PrivacyPolicyPage() {
                   Disconnect your QuickBooks Online or FieldRoutes account at
                   any time through the Service settings
                 </li>
+                <li>
+                  Opt out of SMS/text messages at any time by replying{" "}
+                  <strong>STOP</strong> to any message
+                </li>
               </ul>
               <p className="mt-3">
                 To exercise any of these rights, contact us at{" "}
@@ -269,7 +335,7 @@ export default function PrivacyPolicyPage() {
             {/* 7 */}
             <div>
               <h2 className="mb-3 text-lg font-semibold text-text-primary">
-                7. Cookies and Tracking Technologies
+                8. Cookies and Tracking Technologies
               </h2>
               <p>
                 We use cookies and similar technologies to maintain session
@@ -282,7 +348,7 @@ export default function PrivacyPolicyPage() {
             {/* 8 */}
             <div>
               <h2 className="mb-3 text-lg font-semibold text-text-primary">
-                8. California Privacy Rights (CCPA)
+                9. California Privacy Rights (CCPA)
               </h2>
               <p>
                 If you are a California resident, you have the right to request
@@ -304,7 +370,7 @@ export default function PrivacyPolicyPage() {
             {/* 9 */}
             <div>
               <h2 className="mb-3 text-lg font-semibold text-text-primary">
-                9. Children&apos;s Privacy
+                10. Children&apos;s Privacy
               </h2>
               <p>
                 The Service is not directed to individuals under 18 years of
@@ -317,7 +383,7 @@ export default function PrivacyPolicyPage() {
             {/* 10 */}
             <div>
               <h2 className="mb-3 text-lg font-semibold text-text-primary">
-                10. Third-Party Links
+                11. Third-Party Links
               </h2>
               <p>
                 The Service may contain links to third-party websites or
@@ -330,7 +396,7 @@ export default function PrivacyPolicyPage() {
             {/* 11 */}
             <div>
               <h2 className="mb-3 text-lg font-semibold text-text-primary">
-                11. Changes to This Privacy Policy
+                12. Changes to This Privacy Policy
               </h2>
               <p>
                 We may update this Privacy Policy from time to time. We will
@@ -346,7 +412,7 @@ export default function PrivacyPolicyPage() {
             {/* 12 */}
             <div>
               <h2 className="mb-3 text-lg font-semibold text-text-primary">
-                12. Contact Us
+                13. Contact Us
               </h2>
               <p>
                 If you have questions or concerns about this Privacy Policy or
