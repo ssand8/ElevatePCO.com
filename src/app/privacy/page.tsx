@@ -194,16 +194,21 @@ export default function PrivacyPolicyPage() {
               </p>
               <p className="mt-3">
                 <strong>
-                  No mobile information (including phone numbers and SMS opt-in
-                  or consent data) will be shared with or sold to third parties
-                  or affiliates for their own marketing or promotional purposes.
-                  Text messaging originator opt-in data and consent are not
+                  No mobile information will be shared with third parties or
+                  affiliates for marketing or promotional purposes. Text
+                  messaging originator opt-in data and consent will not be
                   shared with any third parties.
-                </strong>{" "}
-                Mobile information may be shared only with the trusted service
-                providers (such as our messaging platform) that help us deliver
-                the messages you have requested, and only as necessary for that
-                purpose.
+                </strong>
+              </p>
+              <p className="mt-3">
+                We do not sell, rent, or share your mobile phone number or
+                SMS/text messaging opt-in or consent data with any third party.
+                The only exception is the trusted communications provider that
+                transmits the messages on our behalf; this provider acts solely
+                as our service provider to deliver the messages you have
+                requested and is contractually prohibited from using your mobile
+                information for its own purposes. We never sell your mobile
+                information.
               </p>
             </div>
 
@@ -224,9 +229,17 @@ export default function PrivacyPolicyPage() {
                   alerts, and support communications).
                 </li>
                 <li>
-                  We do not sell your mobile information, and we do not share it
-                  with third parties or affiliates for their marketing or
-                  promotional purposes.
+                  <strong>
+                    We do not sell, rent, or share your mobile information or
+                    SMS opt-in/consent data with any third parties or affiliates
+                    for any purpose, including marketing or promotional
+                    purposes.
+                  </strong>
+                </li>
+                <li>
+                  No mobile information is shared with third parties except a
+                  service provider acting on our behalf solely to deliver the
+                  messages you requested.
                 </li>
                 <li>
                   Message frequency varies, and message and data rates may apply.
@@ -264,7 +277,7 @@ export default function PrivacyPolicyPage() {
               </p>
             </div>
 
-            {/* 5 */}
+            {/* 6 */}
             <div>
               <h2 className="mb-3 text-lg font-semibold text-text-primary">
                 6. Data Retention and Deletion
