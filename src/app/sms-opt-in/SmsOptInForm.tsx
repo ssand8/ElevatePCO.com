@@ -92,18 +92,18 @@ export function SmsOptInForm() {
           htmlFor="consent"
           className="cursor-pointer text-sm leading-relaxed text-text-secondary"
         >
-          Yes, I would like to receive automated text messages from ElevatePCO
-          about account and payment activity, appointment and service reminders,
-          and important account updates. I understand I will receive up to 6
-          messages per month.
+          Yes, I would like to receive automated text messages from ElevatePCO,
+          including operational reminders and notifications (such as task,
+          schedule, payroll, and inventory reminders) and important account
+          updates. I understand message frequency varies.
         </label>
       </div>
 
       {/* Disclosures */}
       <div className="mt-5 space-y-2 text-sm leading-relaxed text-text-secondary">
         <p>
-          <strong className="text-text-primary">Message Frequency:</strong> You
-          will receive up to 6 messages per month.
+          <strong className="text-text-primary">Message Frequency:</strong>{" "}
+          Message frequency varies.
         </p>
         <p>
           <strong className="text-text-primary">Standard Rates:</strong> Message

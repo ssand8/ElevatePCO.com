@@ -225,8 +225,8 @@ export default function PrivacyPolicyPage() {
               <ul className="list-disc space-y-1 pl-5">
                 <li>
                   We use your mobile number only to send the messages you have
-                  opted in to receive (such as account notifications, reminders,
-                  alerts, and support communications).
+                  opted in to receive (such as operational reminders, schedule
+                  and task notifications, and important account updates).
                 </li>
                 <li>
                   <strong>

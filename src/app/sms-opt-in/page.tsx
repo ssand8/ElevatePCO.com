@@ -19,10 +19,10 @@ export default function SmsOptInPage() {
             </h1>
             <p className="mt-4 text-sm leading-relaxed text-text-secondary">
               Enter your mobile number and opt in below to receive text messages
-              from ElevatePCO. We&apos;ll keep you posted on account and payment
-              activity, appointment and service reminders, and important
-              updates. Your information is never shared with third parties for
-              marketing.
+              from ElevatePCO. We&apos;ll send operational reminders and
+              notifications — such as task, schedule, payroll, and inventory
+              reminders — and important account updates. Your information is
+              never shared with third parties for marketing.
             </p>
           </div>
 

@@ -76,12 +76,12 @@ export default function TermsOfUsePage() {
               <p className="mb-4">
                 When you opt in to the ElevatePCO messaging program, you may
                 receive SMS/text messages related to your account and our
-                services, such as account and onboarding notifications,
-                appointment and service reminders, compliance and operational
-                alerts, customer support communications, and (where you have
-                separately consented) conversational or informational messages.
-                We do not send messages containing content related to sex,
-                hate, alcohol, firearms, or tobacco (&quot;SHAFT&quot;).
+                services, such as operational reminders and notifications (for
+                example, task, schedule, payroll, and inventory reminders),
+                account and onboarding notifications, and important account
+                updates. Message frequency varies. We do not send messages
+                containing content related to sex, hate, alcohol, firearms, or
+                tobacco (&quot;SHAFT&quot;).
               </p>
 
               <h3 className="mb-2 font-medium text-text-primary">
