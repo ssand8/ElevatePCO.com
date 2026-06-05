@@ -99,6 +99,13 @@ export function SmsOptInForm() {
         </label>
       </div>
 
+      {/* Voluntary-consent disclaimer */}
+      <p className="mt-4 rounded-lg border border-border-custom bg-bg-tertiary px-4 py-3 text-sm font-medium text-text-primary">
+        Opting in to text messages is optional. Consent to receive automated
+        text messages is not a condition of purchasing any goods or services,
+        and is not required to use ElevatePCO or complete any transaction.
+      </p>
+
       {/* Disclosures */}
       <div className="mt-5 space-y-2 text-sm leading-relaxed text-text-secondary">
         <p>
@@ -113,8 +120,7 @@ export function SmsOptInForm() {
           <strong className="text-text-primary">Help &amp; Stop:</strong> Reply{" "}
           <strong>HELP</strong> for help or <strong>STOP</strong> to cancel at
           any time. By providing your phone number and checking the box above,
-          you agree to receive text messages from ElevatePCO. Consent is not
-          required to make a purchase.
+          you agree to receive text messages from ElevatePCO.
         </p>
       </div>
 

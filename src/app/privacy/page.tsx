@@ -220,7 +220,10 @@ export default function PrivacyPolicyPage() {
               <p className="mb-2">
                 When you opt in to our SMS/text messaging program, you consent to
                 receive text messages from ElevatePCO at the mobile number you
-                provide. We handle your mobile information as follows:
+                provide. Opting in is optional — consent to receive text messages
+                is not a condition of purchasing any goods or services, and is not
+                required to use ElevatePCO or to complete any transaction. We
+                handle your mobile information as follows:
               </p>
               <ul className="list-disc space-y-1 pl-5">
                 <li>

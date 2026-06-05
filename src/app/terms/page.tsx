@@ -92,10 +92,11 @@ export default function TermsOfUsePage() {
                 phone number through a web form, during account setup, by
                 texting a designated keyword to our number, or by otherwise
                 expressly providing your number and agreeing to be contacted.
-                Consent to receive marketing or promotional text messages is not
-                a condition of purchasing any goods or services. Message
-                frequency varies based on your account activity and the
-                notifications you have enabled.
+                Opting in to text messages is optional. Consent to receive text
+                messages is not a condition of purchasing any goods or services,
+                and is not required to use ElevatePCO or to complete any
+                transaction. Message frequency varies based on your account
+                activity and the notifications you have enabled.
               </p>
 
               <h3 className="mb-2 font-medium text-text-primary">
