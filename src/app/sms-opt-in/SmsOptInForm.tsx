@@ -7,12 +7,26 @@ export function SmsOptInForm() {
   const [phone, setPhone] = useState("");
   const [consent, setConsent] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
-  const canSubmit = phone.trim().length >= 10 && consent;
+  const phoneValid = phone.trim().length >= 10;
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!canSubmit) return;
+    if (!phoneValid) {
+      setError("Please enter a valid mobile phone number.");
+      return;
+    }
+    // Consent is optional and never gates the submit button. We only enroll
+    // the number in SMS when the box is actively checked; otherwise the form
+    // submits without subscribing.
+    if (!consent) {
+      setError(
+        "To receive text messages, please check the consent box above. Opting in is optional."
+      );
+      return;
+    }
+    setError("");
     setSubmitted(true);
   }
 
@@ -135,11 +149,17 @@ export function SmsOptInForm() {
         </Link>
       </p>
 
+      {/* Error */}
+      {error && (
+        <p className="mt-4 text-sm text-accent-amber" role="alert">
+          {error}
+        </p>
+      )}
+
       {/* Submit */}
       <button
         type="submit"
-        disabled={!canSubmit}
-        className="mt-6 w-full rounded-lg bg-accent-blue px-6 py-3 text-sm font-medium text-white shadow-lg shadow-accent-blue/20 transition-all duration-200 hover:bg-accent-blue-hover hover:shadow-accent-blue/30 disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none"
+        className="mt-6 w-full rounded-lg bg-accent-blue px-6 py-3 text-sm font-medium text-white shadow-lg shadow-accent-blue/20 transition-all duration-200 hover:bg-accent-blue-hover hover:shadow-accent-blue/30"
       >
         Yes, sign me up!
       </button>
