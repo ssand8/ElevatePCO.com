@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Software Built for Pest Control Growth`,
+    default: `${SITE_NAME} | Stop Losing Pest Control Leads and Customers`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     "sales leaderboard pest control",
     "pest control commission tracking",
     "pest control KPIs",
+    "pest control lead follow up",
+    "pest control missed calls",
+    "pest control speed to lead",
   ],
   openGraph: {
     type: "website",

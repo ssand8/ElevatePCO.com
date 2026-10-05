@@ -46,8 +46,12 @@ export default function DashboardsPage() {
           { label: "Book a Demo", href: DEMO_BOOKING_URL },
           { label: "See Features", href: "#features", variant: "secondary" },
         ]}
-        imagePlaceholder="Sales Leaderboard Dashboard"
-        imageType="dashboard"
+        image={{
+          src: "/product/sales-kpis.png",
+          alt: "Sales performance dashboard with live KPIs and a sold-versus-serviced trend chart",
+          width: 1320,
+          height: 860,
+        }}
       />
 
       {/* Features */}

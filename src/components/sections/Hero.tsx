@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
@@ -10,11 +11,19 @@ interface HeroCTA {
   variant?: "primary" | "secondary";
 }
 
+interface HeroImage {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
 interface HeroProps {
   badge?: string;
   title: React.ReactNode;
   subtitle: string;
   ctas: HeroCTA[];
+  image?: HeroImage;
   imagePlaceholder?: string;
   imageType?: "dashboard" | "document";
   fullHeight?: boolean;
@@ -25,10 +34,12 @@ export function Hero({
   title,
   subtitle,
   ctas,
+  image,
   imagePlaceholder,
   imageType = "dashboard",
   fullHeight = false,
 }: HeroProps) {
+  const hasImage = Boolean(image || imagePlaceholder);
   return (
     <section
       className={`relative overflow-hidden ${
@@ -42,14 +53,14 @@ export function Hero({
       <Container className="relative">
         <div
           className={`flex flex-col items-center gap-12 lg:gap-16 ${
-            imagePlaceholder ? "lg:flex-row lg:items-center" : ""
+            hasImage ? "lg:flex-row lg:items-center" : ""
           } ${fullHeight ? "min-h-[80vh] sm:min-h-screen justify-center pt-20" : ""}`}
         >
           {/* Text content */}
           <div
             className={`flex flex-col ${
-              imagePlaceholder ? "lg:w-1/2" : "max-w-3xl"
-            } ${imagePlaceholder ? "items-start text-left" : "items-center text-center"}`}
+              hasImage ? "lg:w-1/2" : "max-w-3xl"
+            } ${hasImage ? "items-start text-left" : "items-center text-center"}`}
           >
             <AnimateOnScroll>
               {badge && <Badge className="mb-6">{badge}</Badge>}
@@ -75,13 +86,24 @@ export function Hero({
           </div>
 
           {/* Image */}
-          {imagePlaceholder && (
+          {hasImage && (
             <AnimateOnScroll direction="right" delay={0.2} className="lg:w-1/2 w-full">
-              <PlaceholderImage
-                label={imagePlaceholder}
-                type={imageType}
-                className="shadow-2xl shadow-accent-blue/10"
-              />
+              {image ? (
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={image.width}
+                  height={image.height}
+                  priority
+                  className="w-full h-auto rounded-xl border border-border-custom shadow-2xl shadow-accent-blue/10"
+                />
+              ) : (
+                <PlaceholderImage
+                  label={imagePlaceholder!}
+                  type={imageType}
+                  className="shadow-2xl shadow-accent-blue/10"
+                />
+              )}
             </AnimateOnScroll>
           )}
         </div>
