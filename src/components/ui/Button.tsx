@@ -47,13 +47,19 @@ export function Button({
   if (href) {
     if (external) {
       return (
-        <a href={href} target="_blank" rel="noopener noreferrer" className={styles}>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles}
+          onClick={onClick}
+        >
           {children}
         </a>
       );
     }
     return (
-      <Link href={href} className={styles}>
+      <Link href={href} className={styles} onClick={onClick}>
         {children}
       </Link>
     );

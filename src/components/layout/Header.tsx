@@ -5,7 +5,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { NAV_LINKS, DEMO_BOOKING_URL } from "@/lib/constants";
+import { NAV_LINKS, DEMO_BOOKING_URL, LOGIN_URL } from "@/lib/constants";
 import type { NavLink, NavDropdownItem } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
@@ -120,9 +120,14 @@ export function Header() {
                 </Link>
               )
             )}
-            <Button href={DEMO_BOOKING_URL} size="sm">
-              Book a Demo
-            </Button>
+            <div className="flex items-center gap-3">
+              <Button href={LOGIN_URL} variant="secondary" size="sm">
+                Log In
+              </Button>
+              <Button href={DEMO_BOOKING_URL} size="sm">
+                Book a Demo
+              </Button>
+            </div>
           </div>
 
           {/* Mobile Toggle */}
@@ -182,7 +187,19 @@ export function Header() {
                   </Link>
                 )
               )}
-              <Button href={DEMO_BOOKING_URL} className="mt-4 w-full">
+              <Button
+                href={LOGIN_URL}
+                variant="secondary"
+                className="mt-4 w-full"
+                onClick={() => setMobileOpen(false)}
+              >
+                Log In
+              </Button>
+              <Button
+                href={DEMO_BOOKING_URL}
+                className="mt-2 w-full"
+                onClick={() => setMobileOpen(false)}
+              >
                 Book a Demo
               </Button>
             </div>
